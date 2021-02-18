@@ -1,13 +1,3 @@
-使用的資料集 GSE52428 H1N1 H3N2 GSE47960 SARS
-
-bat指令 
-python 病毒名稱_leave_one_out.py 測試幾號病人 健康樣本不是測試資料時 第幾次的結果
-python 病毒名稱_leave_one_out.py 測試幾號病人 健康樣本剛好是測試資料時需要使用另一個健康樣本資料集 第幾次的結果
-
-如:
-python H3N2_leave_one_out.py 001 all 1
-python H3N2_leave_one_out.py 002 no_002 1
-
 程式碼主要函式：
 def PreprocessData(raw_df):要預處理的資料(raw_df)作為輸入，分別回傳feature、label
 
